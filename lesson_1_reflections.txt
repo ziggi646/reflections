@@ -1,12 +1,12 @@
 Zohaib Rathore's ongoing musings and learnings:
 
 <Version Control>
-Important to keep track of versions of programs I create. Since I plan to be doing this quite a bit, I should 
-probably start now and utilize best practices.
+Important to keep track of versions of programs I create. Since I plan to be doing this quite a bit, 
+I should probably start now and utilize best practices.
 
 <Bash Terminal>
-Here we go...  I need to try and learn how to use the terminal on my mac. This will take some time. A few 
-basics to remember:
+Here we go...  I need to try and learn how to use the terminal on my mac. This will take some time. 
+A few basics to remember:
 	cd: change director
 	mkdir: make directory
 	subl: launch sublime
@@ -14,12 +14,21 @@ basics to remember:
 	ls: print whats in directory
 	diff: difference between two files (-u makes it easier)
 
-<Using Git>
-I already have Git installed. Can easily check by using git --version. Here are the key commands:
+<Git: KEY UPLOAD/DL COMMANDS>
 	git clone <path>: Copies file from <path> to local folder from the Git repository.
+
+<Git: LOCAL COMMANDS>
 	git log: Version history of the code.
 	git diff <1> <2>: Details of what code changed between two log ids. Note <1> is before <2>.
-	git checkout <1>: Change version to prior version of code contained in <1>.
+	git diff: Difference in files between the staging area and working files.
+	git diff --staged: Difference in files between the staging area and last commit.
+	git show <a>: Shows the differences between the commit <a> and its parent.
+	get reset --hard: Eliminates any changes in working directory AND staging area.
+	git checkout <1>: Change version to prior version (<1>). Can use old verion or branche.
+	git checkout -b new_branch_name: If working on a commit and want to turn it into a new branch.
+	git merge <b1> <b2> [or] git merge <b2>: Merges branch 1 & 2 - branch 1 is set as master.
 	git init: starts git repository locally on computer.
+	git add: add a file to staging area ready for move into repository for future tracking. 
 	git status: provides information on the .git folder.
+	git branch -d <a>: deletes branch <a>.
 
